@@ -1,191 +1,12 @@
 /* ------------------------------------------------------------ 🌷 BASE ------------------------------------------------------------ */
 
-/* ---- Style ---- */
-.theme-dark {
-    --header-primary: #fff;
-    --header-secondary: #b9bbbe;
-    --text-normal: #dcddde;
-    --text-muted: #b9bbbe;
-    --interactive-normal: #b9bbbe;
-    --interactive-hover: #dcddde;
-    --interactive-active: #fff;
-    --interactive-muted: #72767d;
-    --background-primary: #292841;
-    --background-secondary: #232438;
-    --background-secondary-alt: #1d1f2f;
-    --background-tertiary: #181926;
-    --background-accent: #3e3f65;
-    --background-floating: #101019;
-    --background-mobile-primary: #292841;
-    --background-mobile-secondary: #232438;
-    --background-modifier-hover: rgba(62, 63, 101, 0.16);
-    --background-modifier-active: rgba(62, 63, 101, 0.24);
-    --background-modifier-selected: rgba(62, 63, 101, 0.32);
-    --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
-    --info-positive-text: #fff;
-    --info-warning-text: #fff;
-    --info-danger-text: #fff;
-    --info-help-background: hsla(
-        197,
-        calc(var(--saturation-factor, 1) * 100%),
-        47.8%,
-        0.1
-    );
-    --info-help-foreground: hsl(
-        197,
-        calc(var(--saturation-factor, 1) * 100%),
-        47.8%
-    );
-    --info-help-text: #fff;
-    --status-warning-text: #000;
-    --scrollbar-thin-thumb: #181926;
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #181926;
-    --scrollbar-auto-track: hsl(
-        233,
-        calc(var(--saturation-factor, 1) * 26%),
-        18%
-    );
-    --scrollbar-auto-scrollbar-color-thumb: #181926;
-    --scrollbar-auto-scrollbar-color-track: #232438;
-    --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
-    --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
-        0 2px 0 rgba(4, 4, 5, 0.05);
-    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
-    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
-    --logo-primary: #fff;
-    --control-brand-foreground: hsl(
-        227,
-        calc(var(--saturation-factor, 1) * 57.9%),
-        77.6%
-    );
-    --control-brand-foreground-new: hsl(
-        235,
-        calc(var(--saturation-factor, 1) * 86.1%),
-        77.5%
-    );
-    --background-mentioned: hsla(
-        38,
-        calc(var(--saturation-factor, 1) * 95.7%),
-        54.1%,
-        0.1
-    );
-    --background-mentioned-hover: hsla(
-        38,
-        calc(var(--saturation-factor, 1) * 95.7%),
-        54.1%,
-        0.08
-    );
-    --background-message-hover: rgba(4, 4, 5, 0.07);
-    --channels-default: #8e9297;
-    --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-    --channeltextarea-background: #30304f;
-    --activity-card-background: #181926;
-    --textbox-markdown-syntax: #8e9297;
-    --deprecated-card-bg: rgba(24, 25, 38, 0.6);
-    --deprecated-card-editable-bg: rgba(24, 25, 38, 0.3);
-    --deprecated-store-bg: #292841;
-    --deprecated-quickswitcher-input-background: #3e3f65;
-    --deprecated-quickswitcher-input-placeholder: hsla(0, 0%, 100%, 0.3);
-    --deprecated-text-input-bg: rgba(0, 0, 0, 0.1);
-    --deprecated-text-input-border: rgba(0, 0, 0, 0.3);
-    --deprecated-text-input-border-hover: #040405;
-    --deprecated-text-input-border-disabled: #181926;
-    --deprecated-text-input-prefix: #dcddde;
-}
-.theme-dark,
-.theme-light {
-    --text-link: hsl(212, calc(var(--saturation-factor, 1) * 100%), 67%);
-    --text-link-low-saturation: hsl(
-        212,
-        calc(var(--saturation-factor, 1) * 100%),
-        72%
-    );
-    --text-positive: var(--green);
-    --text-warning: var(--yellow);
-    --text-danger: var(--red);
-    --info-positive-background: hsla(
-        139,
-        calc(var(--saturation-factor, 1) * 47.3%),
-        43.9%,
-        0.1
-    );
-    --info-positive-foreground: hsl(
-        139,
-        calc(var(--saturation-factor, 1) * 47.3%),
-        43.9%
-    );
-    --info-warning-background: hsla(
-        38,
-        calc(var(--saturation-factor, 1) * 95.7%),
-        54.1%,
-        0.1
-    );
-    --info-warning-foreground: hsl(
-        38,
-        calc(var(--saturation-factor, 1) * 95.7%),
-        54.1%
-    );
-    --info-danger-background: hsla(
-        359,
-        calc(var(--saturation-factor, 1) * 82.6%),
-        59.4%,
-        0.1
-    );
-    --info-danger-foreground: hsl(
-        359,
-        calc(var(--saturation-factor, 1) * 82.6%),
-        59.4%
-    );
-    --status-positive-background: hsl(
-        139,
-        calc(var(--saturation-factor, 1) * 47.3%),
-        43.9%
-    );
-    --status-positive-text: #fff;
-    --status-warning-background: hsl(
-        38,
-        calc(var(--saturation-factor, 1) * 95.7%),
-        54.1%
-    );
-    --status-danger-background: hsl(
-        359,
-        calc(var(--saturation-factor, 1) * 82.6%),
-        59.4%
-    );
-    --status-danger-text: #fff;
-    --focus-primary: hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);
-}
-:root {
-    --border-radius-1: 16px;
-    --border-radius-2: 10px;
-    --border-radius-3: 5px;
-
-    --grey: #99aab5;
-    --bronze: #e4953c;
-
-    --usesettingsicons: calc(
-        var(--settingsicons, 1) /
-            (var(--settingsicons, 1) + 0.00000000000000000000001)
-    );
-    --settingsiconssize: 20px;
-    --settingsiconsgap: 10px;
-}
-::selection {
-    background: #5966f380;
-}
-
 /* ---- Buttons ---- */
 button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-button) {
     border-radius: var(10px) !important;
 }
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
-.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV,
 .iconWrapper-3LVgIo[role="button"] {
     background-color: var(--background-accent) !important;
 }
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover,
-.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:hover,
 .iconWrapper-3LVgIo[role="button"]:hover {
     background-color: #4a4c73 !important;
 }
@@ -193,22 +14,10 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 /* ------------------------------------------------------------ 🌱 HOME ------------------------------------------------------------ */
 
 /* ---- Friends ---- */
-.theme-dark .container-1D34oG {
-    background-color: var(--background-primary);
-}
 .peopleListItem-2nzedh,
 .actions-1SQwjn,
 .actions-1SQwjn .actionButton-uPB8Fs {
     transition: 0.25s;
-}
-
-/* ---- Activity Cards ---- */
-.theme-dark .outer-1AjyKL {
-    transition: ease-out 0.25s;
-}
-.theme-dark .outer-1AjyKL.active-1xchHY,
-.theme-dark .outer-1AjyKL.interactive-3B9GmY:hover {
-    background-color: var(--background-floating);
 }
 
 /* ------------------------------------------------------------ 🐻 STATUS & STATUS PICKER ------------------------------------------------------------ */
@@ -341,33 +150,10 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
     visibility: hidden;
 }
 
-/* ---- Billing ---- */
-/* Transaction History */
-.theme-dark .codeRedemptionRedirect-1wVR4b {
-    background-color: var(--background-secondary);
-    border-color: var(--background-tertiary);
-}
-
-/* ---- Voice & Video ---- */
-/* Preview Video */
-.theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
-    background-color: var(--background-secondary);
-    border-color: var(--background-tertiary);
-}
-
 /* ---- Activity Status ---- */
-/* Add an activity Pop-up */
-.theme-dark .addGamePopout-2RY8Ju {
-    background-color: var(--background-primary)
-}
-
 /* ---- Boost Cards ---- */
 .cardWrapper-2Min21 {
     border-radius: var(--border-radius-1);
-}
-/* Level Circle */
-.theme-dark .gemIndicatorContainer-2jdECl {
-    background-color: var(--background-secondary);
 }
 
 /* ---- Connections ---- */
@@ -379,14 +165,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 .contentRegion-3nDuYy {
     --scrollbar-auto-thumb: transparent;
     --scrollbar-auto-track: transparent;
-}
-
-/* ---- Add phone number ---- */
-.theme-dark .popoutList-T9CKZQ {
-    background-color: var(--background-primary);
-}
-.theme-dark .input-3yHnCz {
-    background-color: var(--background-accent);
 }
 
 /* ---- Custom CSS & Themes editor ---- */
@@ -610,19 +388,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
     background-color: #ed42452a;
 }
 
-/* ---- Upload ---- */
-.theme-dark .uploadModal-2ifh8j {
-    background-color: var(--background-primary);
-}
-.theme-dark .footer-3mqk7D {
-    background-color: var(--background-secondary);
-}
-
-/* ---- Channel Topic Popup ---- */
-.theme-dark .root-1gCeng {
-    background-color: var(--background-primary);
-}
-
 /* ---- Channel Header ---- */
 /* Buttons & searchBar */
 .search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb {
@@ -702,10 +467,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
     background-color: var(--accent-color) !important;
 }
 .datePickerHint-3Q1Udw .hintValue-29ny8Z,
-.theme-dark .activeButton-rvKcqq {
-    background-color: var(--accent-color) !important;
-    color: var(--interactive-selected) !important;
-}
 .focused-2bY0OD.queryContainer-RKFJW- {
     background-color: var(--background-modifier-hover);
 }
@@ -721,34 +482,12 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 .option-96V44q:after {
     display: none;
 }
-.theme-dark .option-96V44q.selected-rZcOL- {
-    background-color: var(--background-modifier-hover);
-}
 
 /* ---- Channels Bar ---- */
-/* Stream Preview */
-.theme-dark .streamPreview-2-WUWT {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .previewContainer-12UlHl {
-    background-color: var(--background-secondary-alt);
-}
-/* Voice Connected Popout */
-.theme-dark .container-2x5lvQ section {
-    background-color: var(--background-primary);
-}
-.theme-dark .container-2x5lvQ .header-2C89wJ {
-    background-color: var(--background-secondary);
-}
 
 /* ---- No Channel ---- */
 .noChannel-3LgMRp {
     background-color: var(--background-primary);
-}
-
-/* ---- Boost Progress Bar ---- */
-.theme-dark .progressBarContainer-DLPbha {
-    background-color: var(--background-tertiary);
 }
 
 /* ------------------------------------------------------------ 🦢 MEMBERS ------------------------------------------------------------ */
@@ -802,23 +541,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 
 /* ------------------------------------------------------------ 🥭 CHAT ------------------------------------------------------------ */
 
-/* ---- Spoilers ---- */
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
-    background-color: #181926cc;
-}
-
-/* ---- Slash Commands ---- */
-.theme-dark .autocomplete-1vrmpx,
-.categoryHeader-O1zU94 {
-    background-color: var(--background-secondary);
-}
-.theme-dark .selected-1Tbx07 {
-    background-color: var(--background-primary);
-}
-
 /* ---- Emotes Picker ---- */
 .sprite-2iCowe {
     filter: var(--colored-emoji) !important;
@@ -834,9 +556,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 }
 .unicodeShortcut-15J8Ck {
     background-color: var(--background-secondary-alt);
-}
-.theme-dark .emptyHintCard-2mUdMe {
-    background-color: var(--background-primary);
 }
 
 /* ---- Icons & Buttons Colors ---- */
@@ -883,33 +602,10 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
     border-radius: var(--border-radius-2);
 }
 
-/* ---- Delete A Message ---- */
-.theme-dark .message-2qRu38 {
-    background-color: var(--background-primary);
-}
-.theme-dark .footer-2gL1pp {
-    background-color: var(--background-secondary);
-}
-
-/* ---- Everyone Warning Pop-up */
-.theme-dark .contentWarningPopout-n5JsIs {
-    background-color: var(--background-primary);
-}
-
 /* ---- Others ---- */
 /* Favorite GIF */
 .gifFavoriteButton-3Zycl7:hover {
     color: #ffcc4d;
-}
-/* Nitro & Games' embeds */
-.theme-dark .tile-2OwFgW {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .tile-2OwFgW:hover {
-    background-color: var(--background-floating);
-}
-.theme-dark .invalidPoop-pnUbq7 {
-    background-color: rgba(62, 63, 101, 0.3);
 }
 
 /* ------------------------------------------------------------ 🌷 VOCAL ------------------------------------------------------------ */
@@ -974,50 +670,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 .exampleContainer-25sB-A,
 .exampleContainer-3ekFIr {
     background-color: #312f66;
-}
-
-/* ---- Server Boost & Stickers Status ---- */
-/* Bar */
-.theme-dark .background-3xPPFc {
-    color: var(--background-tertiary);
-}
-.theme-dark .tierInProgress-3mBoXq.tier-2c9-hT {
-    background-color: var(--background-tertiary);
-}
-/* Level Containers */
-.theme-dark .tierHeaderLocked-3S508x,
-.theme-dark .tierHeaderUnlocked-3lTDnP {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .tierBody-3aUxuc {
-    background-color: var(--background-secondary);
-}
-
-/* ---- Boost Page ---- */
-/* Background */
-.theme-dark .perksModal-fSYqOq {
-    background-color: var(--background-primary);
-}
-/* Bar */
-.theme-dark .tierMarkerBackground-3q29am {
-    background-color: var(--background-primary);
-}
-.theme-dark .barBackground-2EEiLw {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .tierMarkerInProgress-24LMzJ.tierMarker-5HkGJ_ {
-    background-color: var(--background-secondary) !important;
-}
-/* Level Containers */
-.theme-dark .tierHeaderLocked-1s2JJz {
-    background-color: var(--background-tertiary);
-}
-.theme-dark .tierBody-16Chc9 {
-    background-color: var(--background-secondary);
-}
-/* Text Blocks */
-.theme-dark .perk-2WeBWW {
-    background-color: var(--background-secondary);
 }
 
 /* ---- View Server As Role ---- */
@@ -1163,10 +815,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 /* ------------------------------------------------------------ 🦢 OTHERS ---------------------------------------------------------------- */
 
 /* ---- Explore ---- */
-/* Background */
-.theme-dark .pageWrapper-1PgVDX {
-    background-color: var(--background-primary);
-}
 /* Main Image */
 .searchHeader-2I26nG {
     padding-top: 30px;
@@ -1192,18 +840,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 /* ---- Keyboard Combos ---- */
 .keyboardShortcutsModal-3piNz7 {
     background-color: var(--background-primary);
-}
-
-/* ---- Color Picker ---- */
-.theme-dark .colorPickerCustom-2CWBn2 {
-    background: var(--background-primary);
-    border-color: var(--background-tertiary);
-    border-radius: var(--border-radius-3);
-}
-
-/* ---- Invite Popup ---- */
-.theme-dark .contentWrapper-3WC1ID {
-    background-color: var(--background-secondary);
 }
 
 /* ---- User Profile ---- */
@@ -1514,13 +1150,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 }
 
 /* ---- Close Button ---- */
-.theme-dark .closeButton-1tv5uR {
-    background-color: var(--background-secondary);
-    transition: ease-out 0.25s;
-}
-.theme-dark .closeButton-1tv5uR:hover {
-    background-color: var(--background-secondary-alt);
-}
 .closeButton-1tv5uR {
     border-color: var(--background-secondary-alt) !important;
 }
@@ -1534,9 +1163,6 @@ button:not(.searchBarComponent-32dTOx):not(.colorPickerSwatch-5GX3Ve):not(.bd-bu
 /* Esc */
 .closeButton-1tv5uR:active {
     transform: translateY(0);
-}
-.theme-dark .keybind-KpFkfr {
-    color: var(--interactive-muted);
 }
 
 /* ---- Servers Column ---- */
@@ -1582,33 +1208,10 @@ path[d="M7.02799 0.333252C3.346 0.333252 0.361328 3.31792 0.361328 6.99992C0.361
     fill: var(--red);
 }
 
-/* ---- Keyboard Combos Popup ---- */
-.theme-dark .keyboardShortcutsModal-3piNz7 {
-    background-color: var(--background-primary);
-}
-
 /* ---- Help Button ---- */
 :root [href="https://support.discord.com"], :root .searchLearnMore-3SQUAj .anchor-3Z-8Bb.anchorUnderlineOnHover-2ESHQB
 {
     display: none;
-}
-
-/* ---- Verification Page ---- */
-.theme-dark .verificationBlock-1Chfpc {
-    border-color: var(--background-tertiary);
-}
-.theme-dark .verificationBlock-1Chfpc:hover {
-    background-color: var(--background-tertiary);
-}
-
-/* ---- Code ---- */
-.theme-dark .markdown-11q6EU code {
-    background-color: var(--background-secondary);
-}
-
-/* ---- Tracker Bars ---- */
-.theme-dark .bar-2Qqk5Z {
-    background-color: var(--background-accent);
 }
 
 /* ---- Checkboxes */
